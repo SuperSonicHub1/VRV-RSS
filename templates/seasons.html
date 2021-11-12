@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Seasons of {{title}} - VRV-RSS</title>
+</head>
+<body>
+	<main>
+		<h1>Seasons of {{title}}</h1>
+		<ul>
+			{% for season_title, id in seasons %}
+			<li>
+				<a href="/season/{{id}}">{{season_title}}</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</main>
+</body>
+</html>

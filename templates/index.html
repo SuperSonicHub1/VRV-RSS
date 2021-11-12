@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VRV-RSS</title>
+</head>
+<body>
+	<main>
+		<h1>VRV RSS</h1>
+		<h2>Get an RSS feed</h2>
+		<form action="/lookup" method="get">
+			<label for="type">Type</label>
+			<select name="type" id="type">
+				<option value="series">Series</option>
+				<option value="season">Season</option>
+			</select>
+			<label for="id">ID</label>
+			<input type="text" name="id" id="id" placeholder="G68DN81D6">
+			<button type="submit">Sumbit</button>
+		</form>
+		<h2>See what seasons feeds are available</h2>
+		<form action="/season_preview" method="get">
+			<label for="id">ID</label>
+			<input type="text" name="id" id="id" placeholder="GY5PX5GDY">
+			<button type="submit">Sumbit</button>
+		</form>
+	</main>
+</body>
+</html>
